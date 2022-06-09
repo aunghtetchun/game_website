@@ -44,7 +44,7 @@ Route::post('/background','PhotoController@changeBackground')->name('photo.chang
 
 
 Route::get('/suggest_game/create','GameController@createSuggest')->name('suggestGame.createSuggest');
-Route::post('/suggest_ame','GameController@storeSuggest')->name('suggestGame.storeSuggest');
+Route::post('/suggest_game','GameController@storeSuggest')->name('suggestGame.storeSuggest');
 Route::get('/request_game/create','GameController@createRequest')->name('requestGame.createRequest');
 Route::post('/request_game','GameController@storeRequest')->name('requestGame.storeRequest');
 Route::post('/add_rating','GameController@storeRating')->name('addRating.storeRating');
