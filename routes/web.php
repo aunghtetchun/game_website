@@ -35,24 +35,24 @@ Route::resource('/suggest','SuggestController');
 Route::resource('/request_app','RequestAppController');
 Route::resource('/comment','CommentController');
 Route::resource('viewer','ViewerController');
-Route::get('/showRating/{id}','PostController@showRating')->name('post.showRating');
-Route::get('/showComment/{id}','PostController@showComment')->name('post.showComment');
+Route::get('/show_rating/{id}','PostController@showRating')->name('post.showRating');
+Route::get('/show_comment/{id}','PostController@showComment')->name('post.showComment');
 
 Route::resource('/ads','AdsController');
 Route::post('/background','PhotoController@changeBackground')->name('photo.changeBackground');
 
 
 
-Route::get('/suggestGame/create','GameController@createSuggest')->name('suggestGame.createSuggest');
-Route::post('/suggestGame','GameController@storeSuggest')->name('suggestGame.storeSuggest');
-Route::get('/requestGame/create','GameController@createRequest')->name('requestGame.createRequest');
-Route::post('/requestGame','GameController@storeRequest')->name('requestGame.storeRequest');
-Route::post('/addRating','GameController@storeRating')->name('addRating.storeRating');
-Route::post('/commentGame','GameController@storeComment')->name('commentGame.storeComment');
-Route::get('/adGame','GameController@adGame')->name('adGame');
+Route::get('/suggest_game/create','GameController@createSuggest')->name('suggestGame.createSuggest');
+Route::post('/suggest_ame','GameController@storeSuggest')->name('suggestGame.storeSuggest');
+Route::get('/request_game/create','GameController@createRequest')->name('requestGame.createRequest');
+Route::post('/request_game','GameController@storeRequest')->name('requestGame.storeRequest');
+Route::post('/add_rating','GameController@storeRating')->name('addRating.storeRating');
+Route::post('/comment_game','GameController@storeComment')->name('commentGame.storeComment');
+Route::get('/ad_game','GameController@adGame')->name('adGame');
 
-Route::get('/showComment/{id}','GameController@showComment')->name('post.showComment');
+Route::get('/show_comment/{id}','GameController@showComment')->name('post.showComment');
 Route::get('/game','GameController@gameList')->name('game.gameList');
-Route::get('/game/{id}','GameController@gameListFilter')->name('game.gameList-filter');
-Route::get('/single-game-list/{id}','GameController@singleGameList')->name('game.single-game-list');
-Route::get('/gameSearch','GameController@gameSearch')->name('game.gameSearch');
+Route::get('/game/{id}','GameController@gameListFilter')->name('game.gameListFilter');
+Route::get('/single_game_list/{id}','GameController@singleGameList')->name('game.singleGameList');
+Route::get('/game_search','GameController@gameSearch')->name('game.gameSearch');
