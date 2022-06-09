@@ -28,7 +28,7 @@ Route::get('/v1/games', array('uses' => 'ApiController@all','middleware' => ['Ap
 Route::get('/v1/ads','ApiController@ads')->middleware('ApiKey');
 
 //Route::post('/v1/request', array('uses' => 'ApiController@createRequest','middleware' => ['ApiKey']));
-Route::resource('/v1','ApiController')->middleware('ApiKey');
+Route::post('/v1','ApiController@create')->middleware('ApiKey');
 
 
 //Route::post('v1/request', 'ApiController@createRequest')->middleware('ApiKey');

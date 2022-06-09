@@ -157,9 +157,30 @@
                     </div>
                     <div class="col-12 text-black-50 text-center" style="background-color: rgba(255,255,255,0.8);">
                         <h3 class="col-12 font-weight-bolder my-4 text-center">About Game</h3>
-{{--                         - the continuation of the popular sports franchise that has won the recognition of players through a combination of gameplay mechanics. So you have to lities of a coach, owner, manager, economist and others. It is worth noting that this part has retained all the typical gaming solutions and the so beloved gameplay features at the same time acquired updated graphics created using the latest technologies, an improved physical model, modern AI, and a number of original game finds that will give the process of realism. It is worth noting that the economic model has also been redesigned, so now you have to spend the received funds more carefully.--}}
-{{--                         this game you can become a real professional boxer and reach extraordinary heights.pportunity to create your character and give it an unusual look withpe. The game has several modes, which will allow you to first learn how to win and then go to the career mode and prove to everyone that you have no equal. As in the course of the game, you can pump out the characteristics of your fighter.--}}
-                        {!! $game->description !!}
+                        <ul class="nav px-0 d-flex justify-content-center col-12 nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item col-6 px-0">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">English</a>
+                            </li>
+                            <li class="nav-item col-6 px-0">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Myanmar</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-4" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+{{--                                {{!! $game->e_description}}--}}
+                                You are the shadow
+                                In Shadow Fight 2, you will transform into an invincible samurai warrior, who travels the world looking for his opponent. The victory makes him arrogant and violates the strict law of the samurai that is breaking the seal of Gate of Shadows. That is where the most dangerous enemies of the world are imprisoned.
+
+                                That mistake caused him to suffer the consequences. The whole world of darkness has been liberated, the powerful magic from Gate Of Shadows attracts his appearance, leaving him with only the shadow. He realizes that something wrong and could harm the world, he resolved to practice and fight to put the evil spirits down again.
+
+                                Gameplay
+                                Shadow Fight 2 has a gameplay similar to traditional RPGs such as Tekken or Mortal Kombat. In it, your task is to participate in the battles 1vs1 antagonism, use the control keys to move, attack and avoid attacks from the enemy. The most important thing is that you have to combine the keys to create skills and combo continuously.
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+{{--                                {!! $game->m_description !!}--}}
+                                {{ $game->description }}
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 text-black-50 text-center" style="background-color: rgba(255,255,255,0.8);">
                         <h3 class="col-12 font-weight-bolder text-center my-3">Mod Features</h3>

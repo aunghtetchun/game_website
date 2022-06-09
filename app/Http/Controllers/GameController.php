@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 class GameController extends Controller
 {
     public function popular(){
+//        return 'hello';
         $posts=Post::withCount(['getViewer'])->orderBy('get_viewer_count','desc')->limit(12)->get();
         return view('welcome',compact('posts'));
     }
